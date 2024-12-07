@@ -1,0 +1,189 @@
+/* Fondo principal */
+body.main-background {
+    background: url('https://example.com/fondo-principal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 114, 206, 0.7);
+    color: white;
+    background-image: url('../img/library.png');
+}
+
+/* Título principal */
+.main-title {
+    font-size: 36px;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background-color: #0072ce;
+    text-align: center;
+}
+
+    .nav-bar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .nav-bar ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+            .nav-bar ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px 20px;
+                display: block;
+            }
+
+                .nav-bar ul li a:hover,
+                .nav-bar ul li a.active {
+                    background-color: #005a94;
+                }
+
+/* Contenido principal */
+.content {
+    text-align: center;
+    padding: 20px 5px 60px 5px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #0072ce;
+}
+
+.text {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #0072ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 14px;
+}
+
+/* Adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 0;
+    }
+
+    .nav-bar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 50px 20px;
+    }
+}
+/* Fondo para Login */
+body.login-background {
+    background: url('https://example.com/fondo-login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor para centrar el login */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja del login */
+.login-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+    /* Título del login */
+    .login-box h2 {
+        color: #0072ce;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos de los inputs */
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    /* Estilos del botón */
+    .login-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0072ce;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Estilo para enlaces */
+    .login-box a {
+        color: #0072ce;
+        text-decoration: none;
+    }
+
+/* Enlace de olvido de clave */
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+/* Enlace de registro */
+.register {
+    margin-top: 20px;
+}
+
+/* Adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .login-box {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+
