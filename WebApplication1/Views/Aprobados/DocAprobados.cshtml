@@ -10,11 +10,12 @@
 </head>
 <body>
     <nav id="btn-Menu">
-        <a href="#" class="btn btn-nav">Nuevo</a>
-        <a href="#" class="btn btn-nav">En revisión</a>
-        <a href="#" class="btn btn-nav">Aprobados</a>
-        <a href="#" class="btn btn-nav">Avatares</a>
-        <a href="#" class="btn btn-nav">Correo cambio contraseña</a>
+        <a class="btn btn-nav" asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="NuevoDocumento" asp-action="GenerarDocumento" class="btn btn-nav">Nuevo</a>
+        <a asp-controller="Revision" asp-action="DocRevision" class="btn btn-nav">En revisión</a>
+        <a asp-controller="Aprobados" asp-action="DocAprobados" class="btn btn-nav">Aprobados</a>
+        <a asp-controller="Avatares" asp-action="SeleccionAvatares" class="btn btn-nav">Avatares</a>
+        <a asp-controller="Correo" asp-action="CorreoCambioContrasena" class="btn btn-nav">Correo cambio contraseña</a>
     </nav>
     <!-- Encabezado con avatar e información del usuario -->
     <header class="header">
