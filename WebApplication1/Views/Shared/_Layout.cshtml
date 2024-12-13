@@ -109,7 +109,7 @@
     }
 
     .card-footer h3 {
-        font-size: clamp(1rem, 2.5vw, 1.5rem); /* Tamaño adaptable */
+        font-size: clamp(1rem, 2.5vw, 1.5rem); 
         color: #fff;
         margin: 0 0 0.5rem;
         text-align: center;
@@ -122,7 +122,7 @@
 
 
         .card-footer h3 {
-            font-size: 1.2rem; /* Reduce ligeramente el tamaño en pantallas pequeñas */
+            font-size: 1.2rem; 
         }
     }
 </style>
@@ -130,6 +130,8 @@
 
 </head>
 <body class="main-background">
+    @if (ViewBag.HideHeader == null || !(bool)ViewBag.HideHeader)
+    {
     <header class="header">
         <h1 class="main-title">Gestor Documental DocWare</h1>
     </header>
@@ -140,7 +142,8 @@
             <li><a href="/Home/Contact" class="nav-link">Contacto</a></li>
             <li><a href="/Home/Login" class="nav-link">Iniciar sesión</a></li>
         </ul>
-    </nav>
+    </nav> 
+    }
     <main class="content">
         @RenderBody()
     </main>

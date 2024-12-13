@@ -1,16 +1,16 @@
 /* Fondo principal */
 body.main-background {
-    background: url('https://example.com/fondo-principal.jpg') no-repeat center center fixed;
+    background-color: white;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: -20px;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Encabezado */
 .header {
-    text-align: center;
-    padding: 50px 0;
+    padding: 40px 60px;
     background-color: rgba(0, 114, 206, 0.7);
     color: white;
     background-image: url('../img/library.png');

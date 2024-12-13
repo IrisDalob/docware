@@ -1,0 +1,231 @@
+﻿@{
+    ViewData["Title"] = "Documento en revision";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Revisión</title>
+</head>
+<body>
+    <nav id="btn-Menu">
+        <a href="#" class="btn btn-nav">Nuevo</a>
+        <a href="#" class="btn btn-nav">En revisión</a>
+        <a href="#" class="btn btn-nav">Aprobados</a>
+        <a href="#" class="btn btn-nav">Avatares</a>
+        <a href="#" class="btn btn-nav">Correo cambio contraseña</a>
+
+    </nav>
+    <!-- Encabezado con avatar e información del usuario -->
+    <header class="header">
+        <div class="user-info">
+            <img src="~/img/avatar1.png.jpeg" alt="Usuario" class="user-avatar">
+            <div>
+                <p class="main-title">Luis Yañez</p>
+                <p class="main-title">Product Manager</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Vista principal -->
+    <div class="document-section">
+        <!-- Pendientes por revisión -->
+        <div class="comments-section">
+            <h3>Pendientes por revisión</h3>
+            <p>Estado de archivo inconcluso</p>
+            <div class="comment-box">
+                <p><strong>Iris</strong> Normativa ISO 9001</p>
+                <small>15/11/2024 12:32</small>
+            </div>
+        </div>
+        <!-- Vista previa -->
+        <div class="document-preview">
+            <img src="~/img/plantilladocument.png.png" alt="Vista previa" class="preview-img">
+            <div style="display: flex; gap: 20px;">
+                <button class="btn-Aprobar">Aprobar</button>
+                <button class="btn-Rechazar">Rechazar</button>
+            </div>
+        </div>
+
+        <!-- Cuadro de comentarios -->
+        <div class="comments-section">
+            <h3 class="section-title-comen">Comentario</h3>
+            <textarea placeholder="Escribe un comentario..."></textarea>
+            <button class="btn-Agregar">Agregar</button>
+        </div>
+    </div>
+
+
+    <!-- CSS Interno -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        /* Encabezado */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 60px;
+            background-color: rgba(0, 114, 206, 0.7);
+            color: white;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .user-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 60%;
+        }
+
+        .main-title {
+            color: white;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #btn-Menu {
+            padding: 12px 20px;
+            background-color: #0072ce;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-nav {
+            padding: 12px 20px;
+        }
+
+        .btn-Aprobar {
+            padding: 12px 20px;
+            background-color: #0072ce;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-Rechazar {
+            padding: 12px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-Agregar {
+        padding: 12px 20px;
+        background-color: #0072ce;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        /* Sección principal */
+        .document-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            background-color: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            color: white;
+            text-align: center;
+        }
+
+        .section-title-comen {
+            color: blue;
+            text-align: center;
+        }
+
+
+        /* Comentarios */
+        .comments-section {
+            color: rgb(0, 114, 206);
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0, 114, 206, 0.1);
+            border-radius: 5px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+            .comments-section h3 {
+                margin-top: 0;
+                font-size: 20px;
+            }
+
+        .comment-box {
+            background: white;
+            padding: 12px;
+            border: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        /* Vista previa */
+        .document-preview {
+            margin: 40px auto;
+            padding: 40px;
+            border: 3px solid #0072ce;
+            border-radius: 10px;
+            background: white;
+            width: 80%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .preview-img {
+            max-width: 25%;
+            height: auto;
+        }
+
+        textarea {
+            width: 95%;
+            height: 100px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+       
+    </style>
+</body>
+</html>
+
+
